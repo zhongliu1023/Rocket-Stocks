@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Rocket-Stocks/static/css/main.69eda509.chunk.css",
+    "main.js": "/Rocket-Stocks/static/js/main.aa9d3058.chunk.js",
+    "main.js.map": "/Rocket-Stocks/static/js/main.aa9d3058.chunk.js.map",
+    "runtime-main.js": "/Rocket-Stocks/static/js/runtime-main.e4adf95f.js",
+    "runtime-main.js.map": "/Rocket-Stocks/static/js/runtime-main.e4adf95f.js.map",
+    "static/js/2.740aca9d.chunk.js": "/Rocket-Stocks/static/js/2.740aca9d.chunk.js",
+    "static/js/2.740aca9d.chunk.js.map": "/Rocket-Stocks/static/js/2.740aca9d.chunk.js.map",
+    "index.html": "/Rocket-Stocks/index.html",
+    "precache-manifest.415b15902e0b448b4fe59cdab805837d.js": "/Rocket-Stocks/precache-manifest.415b15902e0b448b4fe59cdab805837d.js",
+    "service-worker.js": "/Rocket-Stocks/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/Rocket-Stocks/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.740aca9d.chunk.js.LICENSE.txt": "/Rocket-Stocks/static/js/2.740aca9d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4adf95f.js",
+    "static/js/2.740aca9d.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.aa9d3058.chunk.js"
+  ]
+}
