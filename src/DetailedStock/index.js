@@ -21,6 +21,12 @@ export default (props) => {
   const { symbol } = useParams();
   const query = useQuery();
   const interval = queryOrDefault(query, "interval", "D");
+  const favorite = queryOrDefault(query, "favorite", 'false');
+  const name = queryOrDefault(query, "name", "");
+
+  console.log("favorite", favorite);
+  console.log("name", name);
+  console.log("interval", interval);
 
   useEffect(() => {
     var height =
@@ -32,14 +38,25 @@ export default (props) => {
 
   return (
     <div id="detchartcont">
-      <TradingViewWidget
-        symbol={`NASDAQ:${symbol}`}
-        theme={Themes.DARK}
-        interval={interval}
-        range={intervalRangeMap[interval]}
-        hide_side_toolbar={true}
-        autosize
-      />
+      {favorite === 'true' ? (
+        <TradingViewWidget
+          symbol={symbol}
+          theme={Themes.DARK}
+          withdateranges={true}
+          hide_side_toolbar={true}
+          autosize
+        />
+      ) : (
+        <TradingViewWidget
+          symbol={symbol}
+          theme={Themes.DARK}
+          interval={interval}
+          range={intervalRangeMap[interval]}
+          hide_side_toolbar={true}
+          hide_top_toolbar={true}
+          autosize
+        />
+      )}
     </div>
   );
 };
