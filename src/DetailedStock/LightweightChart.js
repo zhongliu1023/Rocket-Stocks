@@ -89,7 +89,7 @@ const LightWeightChart = (props) => {
           mode: interval.toLowerCase() === "d" ? 0 : 1,
         },
         handleScale: false,
-        handleScroll: true,
+        handleScroll: false,
       });
       setChart(ch);
     }
