@@ -142,7 +142,7 @@ const LightWeightChart = (props) => {
   return (
     <div
       ref={containerRef}
-      style={{ border: "2px solid rgba(54,60,78,0.3)", borderRadius: "5px" }}
+      style={{ border: "1px solid #262a33", borderRadius: "5px" }}
       // onMouseEnter={() => {
       //   // console.log("enter");
       //   chart.applyOptions({
