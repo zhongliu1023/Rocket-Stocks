@@ -35,12 +35,7 @@ const LightWeightChart = (props) => {
     end = new Date();
     start = new Date(end - months * 30 * 24 * 60 * 60 * 1000);
     end = new Date(end.getTime() + 3 * 24 * 60 * 60 * 1000);
-    console.log("range", range);
-    console.log(
-      `/quotes?symbol=${symbol}&interval=${
-        intervalMap[interval]
-      }&start=${_dateToIsoDate(start)}&end=${_dateToIsoDate(end)}&latest=1`
-    );
+
     ApiClient.get(
       `/quotes?symbol=${symbol}&interval=${
         intervalMap[interval]

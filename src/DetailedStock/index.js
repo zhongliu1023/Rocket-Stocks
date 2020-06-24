@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TradingViewWidget, { Themes } from "react-tradingview-widget";
+// import TradingViewWidget, { Themes } from "react-tradingview-widget";
 import { useParams, useLocation } from "react-router-dom";
 import LightweightChart from "./LightweightChart";
 
@@ -26,10 +26,6 @@ export default (props) => {
   const interval = queryOrDefault(query, "interval", "D");
   const favorite = queryOrDefault(query, "favorite", "false");
   const name = queryOrDefault(query, "name", "");
-
-  console.log("favorite", favorite);
-  console.log("name", name);
-  console.log("interval", interval);
 
   useEffect(() => {
     var hh =
