@@ -20,7 +20,7 @@ const LightWeightChart = (props) => {
     if (chart !== undefined) {
       chart.resize(
         containerRef.current.clientWidth,
-        height - 4
+        height - 2
       );
     }
   }, [containerRef.current, width, height, chart]);
@@ -137,7 +137,7 @@ const LightWeightChart = (props) => {
   return (
     <div
       ref={containerRef}
-      style={{ border: "1px solid #262a33", borderRadius: "5px" }}
+      style={{ border: "1px solid #262a33"}}
       // onMouseEnter={() => {
       //   // console.log("enter");
       //   chart.applyOptions({
