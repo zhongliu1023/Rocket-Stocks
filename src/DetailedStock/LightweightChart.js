@@ -66,7 +66,7 @@ const LightWeightChart = (props) => {
         // width: width,
         height: height,
         localization: {
-          dateFormat: "dd/MM/yyyy",
+          dateFormat: "MM/dd/yyyy",
         },
         layout: {
           textColor: "#d1d4dc",
@@ -79,6 +79,13 @@ const LightWeightChart = (props) => {
           horzLines: {
             color: gridLineColor,
           },
+        },
+        timeScale: {
+          tickMarkFormatter: (timePoint, tickMarkType, locale) => {
+            console.log(timePoint, tickMarkType, locale);
+            return timePoint;
+          },
+          rightOffset: 3
         },
         priceScale: {
           mode: interval.toLowerCase() === "d" ? 0 : 1,
