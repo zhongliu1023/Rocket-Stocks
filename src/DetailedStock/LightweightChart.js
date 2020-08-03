@@ -18,10 +18,7 @@ const LightWeightChart = (props) => {
 
   useEffect(() => {
     if (chart !== undefined) {
-      chart.resize(
-        containerRef.current.clientWidth,
-        height - 2
-      );
+      chart.resize(containerRef.current.clientWidth, height - 2);
     }
   }, [containerRef.current, width, height, chart]);
 
@@ -66,7 +63,7 @@ const LightWeightChart = (props) => {
         // width: width,
         height: height,
         localization: {
-          dateFormat: "MM/dd/yyyy",
+          dateFormat: "dd/MM/yyyy",
         },
         layout: {
           textColor: "#d1d4dc",
@@ -81,11 +78,7 @@ const LightWeightChart = (props) => {
           },
         },
         timeScale: {
-          tickMarkFormatter: (timePoint, tickMarkType, locale) => {
-            console.log(timePoint, tickMarkType, locale);
-            return timePoint;
-          },
-          rightOffset: 3
+          rightOffset: 3,
         },
         priceScale: {
           mode: interval.toLowerCase() === "d" ? 0 : 1,
@@ -144,7 +137,7 @@ const LightWeightChart = (props) => {
   return (
     <div
       ref={containerRef}
-      style={{ border: "1px solid #262a33"}}
+      style={{ border: "1px solid #262a33" }}
       // onMouseEnter={() => {
       //   // console.log("enter");
       //   chart.applyOptions({
